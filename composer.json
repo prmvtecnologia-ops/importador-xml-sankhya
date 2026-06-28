@@ -1,0 +1,16 @@
+{
+  "name": "prmv/importador-xml-sankhya",
+  "description": "Importador XML para Sankhya pronto para deploy no Render",
+  "type": "project",
+  "require": {
+    "php": "^8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:$PORT -t public"
+  }
+}
