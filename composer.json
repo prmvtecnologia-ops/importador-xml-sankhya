@@ -1,0 +1,13 @@
+{
+  "name": "prmv/importador-xml-sankhya",
+  "description": "Importador XML NF-e para Sankhya",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "php": "^8.3"
+  }
+}

@@ -14,9 +14,9 @@ WORKDIR /var/www/html
 
 COPY . .
 
-RUN mkdir -p storage/logs public/uploads || true \
-    && chmod -R 777 . || true
+RUN mkdir -p storage/logs public/uploads \
+    && chmod -R 777 storage public/uploads
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "php -S 0.0.0.0:${PORT:-10000} -t ."]
+CMD ["sh", "-c", "php -S 0.0.0.0:${PORT:-10000} -t public"]
