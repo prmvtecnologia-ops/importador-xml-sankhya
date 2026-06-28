@@ -1,1 +1,0 @@
-const input=document.querySelector('input[type=file]');if(input){input.addEventListener('change',()=>{const h=document.querySelector('.drop h3');if(h&&input.files.length){h.textContent=input.files[0].name;}})}
